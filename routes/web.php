@@ -8,6 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//http://localhost/agenciaViajes-Laravel/public/viajeros
 Route::resource('viajeros', ViajeroController::class);
 Route::resource('viajes',ViajeController::class);
 

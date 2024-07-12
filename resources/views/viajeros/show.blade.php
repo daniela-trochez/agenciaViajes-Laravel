@@ -6,9 +6,12 @@
 <p><strong>Telefono: </strong>{{$viajero->telefono}}</p>
 
 <a href="{{route('viajeros.edit', $viajero->id)}}">Editar</a>
-
+<br><br>
 <form action="{{route('viajeros.destroy', $viajero)}}" method="POST">
     @csrf
-    @method('Delete') <br>
+    @method('Delete') 
     <button>Eliminar</button>
 </form>
+
+<br><br>
+<a href="{{route('viajes.index')}}">Volver a index</a>
